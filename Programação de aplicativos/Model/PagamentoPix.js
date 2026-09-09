@@ -4,7 +4,7 @@ export class PagamentoPix extends Pagamento{
     #chavePix
     constructor (valor, chavePix){
         super(valor),
-        this.#chavePix
+        this.#chavePix = chavePix;
     }
 
     get chavePix(){
@@ -12,6 +12,6 @@ export class PagamentoPix extends Pagamento{
     }
 
     processarPag(){
-        console.log(`Copie e cole essa chave pix ${this.#chavePix}`);        
+        console.log(`Copie e cole essa chave pix ${this.#chavePix} no valor ${this.valor}`);
     }
 }
